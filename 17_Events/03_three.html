@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JS</title>
+  </head>
+  <body>
+    <h1>JavaScript projects</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    const changeMe = function () {
+      console.log("Aditya Shriwas");
+    };
+    document.querySelector("#start").addEventListener("click", function () {
+        setInterval(changeMe, 1000)
+    });
+    document.querySelector("#stop").addEventListener("click", function () {
+        clearInterval(changeMe);
+    });
+
+  </script>
+</html>
